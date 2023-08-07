@@ -1,3 +1,3 @@
 module DataParser
-  VERSION = '1.0.0' unless defined?(::DataParser::VERSION)
+  VERSION = '0.1.0' unless defined?(::DataParser::VERSION)
 end
