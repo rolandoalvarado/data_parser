@@ -13,10 +13,12 @@ module DataParser
     end
 
     def process(params: {})
+      raise DataParser::EmptyString if params.empty? && params.is_a?(String)
+
       names = []
       emails = []
       file = File.read(path)
-      search_string = params[params.keys.first.to_sym] if params.present? && params.keys.any?
+      search_string = params[params.keys.first.to_sym] if params && params.keys.any?
 
       json_data(file:).each do |data|
         data.map do |key, value|

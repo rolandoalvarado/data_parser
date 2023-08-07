@@ -34,6 +34,12 @@ RSpec.describe DataParser::Json do
   end
 
   describe '.process' do
+    context 'when param is an emptry string' do
+      it 'raises DataParser::EmptyString' do
+        expect { subject.process(params: '') }.to raise_error(DataParser::EmptyString)
+      end
+    end
+
     context 'when searching for partially matching name' do
       let(:full_name) { 'Mich' }
 

@@ -15,6 +15,10 @@ module DataParser
   class PathMissing < DataParser::Exception
   end
 
+  # Exception that is raised if param is an empty string.
+  class EmptyString < DataParser::Exception
+  end
+
   def self.parse(path:)
     DataParser::Json.new(path:)
   end
