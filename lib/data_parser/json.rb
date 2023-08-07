@@ -16,7 +16,7 @@ module DataParser
       names = []
       emails = []
       file = File.read(path)
-      search_string = params[params.keys.first.to_sym] if params.any?
+      search_string = params[params.keys.first.to_sym] if params.present? && params.keys.any?
 
       json_data(file:).each do |data|
         data.map do |key, value|
