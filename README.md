@@ -13,11 +13,14 @@ Install from source:
 gem "data_parser", :git => "git://github.com/rolandoalvarado/data_parser.git"
 ```
 
-Clone and Download the files and use it in your ruby file.
-
-NOTE: Once this is publish as gem you can install by:
+Install as RubyGem:
 ```
 gem install data_parser
+```
+
+Install in your Rails application:
+```
+gem 'data_parser', '~> 0.1.0'
 ```
 
 ## Usage
