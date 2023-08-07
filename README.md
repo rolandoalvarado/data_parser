@@ -31,13 +31,32 @@ path = '<json file path>'
 full_name = 'Mich'
 result = DataParser.parse(path:).process(params: { full_name: }).names
 ```
+```
+[
+  {
+    "id": 4,
+    "full_name": "Michael Williams",
+    "email": "michael.williams@outlook.com"
+  },
+  {
+    "id": 10,
+    "full_name": "Michael Brown",
+    "email": "michael.brown@inbox.com"
+  }
+]
+
+```
 
 Showing for duplicate email:
 ```
 path = '<json file path>'
 result = DataParser.parse(path:).process.emails
 ```
-
+```
+[
+  "jane.smith@example.com"
+]
+```
 Using in a Ruby File:
 1. Add this to your code:
   ```
