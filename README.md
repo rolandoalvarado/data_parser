@@ -42,11 +42,11 @@ Using in a Ruby File:
   ```
 2. Make ruby file executable
   ```
-  chmod +x data_parser_runner.rb
+  chmod +x bin/data_parser_runner.rb
   ```
 3. Execute the file:
 ```
-./data_parser_runner.rb
+./bin/data_parser_runner.rb
 ```
 
 Running the test:

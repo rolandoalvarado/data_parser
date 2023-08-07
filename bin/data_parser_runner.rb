@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'json'
-require_relative 'lib/data_parser.rb'
+require_relative '../lib/data_parser.rb'
 
 print 'Enter JSON File path: '
 
