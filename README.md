@@ -1,6 +1,6 @@
 # DataParser
 
-DataParser is a simple code for parsing a json file with search capabilty for partial or full name and displaying of duplicate email if there is.
+DataParser is a simple gem for parsing a json file with search capabilty for partial or full name and displaying of duplicate email if there are.
 
 NOTE: Later on it can extend to process other file type like csv, pdf, text file.
 
