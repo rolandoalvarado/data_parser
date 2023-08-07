@@ -8,7 +8,10 @@ NOTE: Later on it can extend to process other file type like csv, pdf, text file
 
 ## Installation
 
-Install from source: gem "data_parser", :git => "git://github.com/rolandoalvarado/data_parser.git"
+Install from source:
+```
+gem "data_parser", :git => "git://github.com/rolandoalvarado/data_parser.git"
+```
 
 Clone and Download the files and use it in your ruby file.
 
