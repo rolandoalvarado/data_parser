@@ -28,3 +28,5 @@ end
 
 emails = DataParser.parse(path:).process.emails
 puts "Email that has duplicate : #{JSON.pretty_generate(emails)}"
+
+puts "Test commit---"
